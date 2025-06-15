@@ -13,8 +13,7 @@ spec:
         app: flask-app
     spec:
       containers:
-      - name: flask-container
-        image: shivamsoni1995/flask-app-argocd:latest  # updated by Jenkins
-        ports:
-        - containerPort: 5000
-
+        - name: flask-container
+          image: shivamsoni1995/flask-app-argocd:v9 # updated by Jenkins
+          ports:
+            - containerPort: 5000
