@@ -17,9 +17,7 @@ pipeline {
 
     stage('Build & Push Docker Image') {
       steps {
-        withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
-          sh "sudo groupadd docker"
-          sh "sudo usermod -aG docker $USER"
+        withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {         
           sh "docker build -t ${IMAGE}:${TAG} ."
           sh "echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin"
           sh "docker push ${IMAGE}:${TAG}"
