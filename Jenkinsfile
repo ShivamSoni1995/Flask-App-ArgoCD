@@ -39,8 +39,9 @@ pipeline {
             git config user.email "jenkins-bot@example.com"
             git add deployment.yml
             git commit -m "Update image tag to ${TAG} [ci skip]" || echo 'No changes'
-            git push https://${GIT_USER}:${GIT_PASS}@github.com/YOUR_USERNAME/flask-app-k8s.git ${BRANCH}
+            git push https://${GIT_USER}:${GIT_PASS}@github.com/ShivamSoni1995/Flask-App-ArgoCD.git ${BRANCH}
           """
+          
         }
       }
     }
