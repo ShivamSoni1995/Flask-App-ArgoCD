@@ -5,7 +5,7 @@ pipeline {
     IMAGE = "shivamsoni1995/flask-app-argocd"
     TAG = "v${BUILD_NUMBER}"
     BRANCH = "main"
-    GIT_REPO = "https://github.com/ShivamSoni1995/flask-app-k8s.git"
+    GIT_REPO = "https://github.com/ShivamSoni1995/Flask-App-ArgoCD.git"
   }
 
   stages {
