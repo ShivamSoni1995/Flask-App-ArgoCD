@@ -18,5 +18,6 @@ This project demonstrates a complete CI/CD and GitOps pipeline where:
 - 📁 GitHub
 - 🔐 Docker Hub
 
+Hashnode Article: https://shivtrent.hashnode.dev/cicd-and-gitops-pipeline-with-jenkins-docker-hub-and-argocd
 ---
 
